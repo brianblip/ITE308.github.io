@@ -1,52 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
-    <title>Document</title>
-</head>
-<body style="background-color:#92B4A7  ;"> 
+<html>
+	<head>
+		<title>Layout Demo</title>
+		<style media="screen">
+			*{
+				box-sizing: border-box;
+			}
+			body{
+					font-family: cursive;
 
-    <table>
-        <caption>List of the students</caption>
-        <tr>
-            <th>First Name:</th>
-            <th>Last Name:</th>
-            <th>Gender:</th>
-            
+		}
+		header{
+			background-image: url('IMG_3644.jpeg');
+			background-size: cover;
+			padding: 40px;
+			font-size: 30px;
+		}
+		nav{
+			float: left;
+			width: 30%;
+			height: 650px;
+			background-color: antiquewhite;
+			padding: 25px;
+		}
+		nav ul{
+			list-style-type: none;
+			padding: 0px ;
+		}
+		article{
+			float: left;
+			padding: 20px;
+			width: 70%;
+			height: 650px;
+		    background-color: skyblue;
+		}
+		section::after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		footer {
+			background-color:green;
+			padding: 10px;
+			text-align: center;
+			color: white;
+		}
+		@media (max-with: 600px){
+			nav,article{
+				width: 100%;
+				height: auto;
+			}
+		}
+		
+		</style>	
 
-        </tr>
-        <tr>
-            <td>Brian</td>
-            <td>Prado</td>
-            <td>Male</td>
-        </tr>
-        <tr>
-            <td>Rashid</td>
-            <td>Durant</td>
-            <td>Male</td>
-        </tr>
+	</head>
 
-        <tr>
-            <td>Sandara</td>
-            <td>Zamora</td>
-            <td>Female</td>
-        </tr>
+<body>
+	
+	<header>
+		<h1 style="color:black;">Courses</h1>
+	</header>
+	
+	<section>
+		
+		<nav>
+			<ui>
+				<li> <a href="Practice (2).html">Java</a>	</li>
+				<li> <a href="html.html">HTML</a>	</li>
+				<li> <a href="python.html">Python</a>	</li>
+				<li> <a href="css.html">CSS</a>	</li>
+			</ui>
+		</nav>
+		
+		<article>
+		
+		<h1>Java</h1>
+		
+		<p>Java is a programming language and computing platform first released by Sun Microsystems in 1995. It has evolved from humble beginnings to power a large share of today’s digital world, by providing the reliable platform upon which many services and applications are built. New, innovative products and digital services designed for the future continue to rely on Java, as well.</p>
+		
+		<p>While most modern Java applications combine the Java runtime and application together, there are still many applications and even some websites that will not function unless you have a desktop Java installed. Java.com, this website, is intended for consumers who may still require Java for their desktop applications – specifically applications targeting Java 8. Developers as well as users that would like to learn Java programming should visit the dev.java website instead and business users should visit oracle.com/java for more information.</p>
+			
 
-        <tr>
-            <td>Princess</td>
-            <td>De Vera</td>
-            <td>Female</td>
-        </tr>
+		</article>
+	</section>
+	
+	<footer> 
+		<p>© Gubatan, Neil Carlos M. | WEBDEV3-7</p>
+	</footer>
 
-        <tr>
-            <td>Johnny</td>
-            <td>Caburao</td>
-            <td>Male</td>
-        </tr>
-
-    </table>
-    
 </body>
-</html>
